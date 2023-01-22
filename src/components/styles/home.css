@@ -1,0 +1,127 @@
+.home__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 181px;
+    margin-bottom: 125px;
+}
+
+.text__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.text__p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(102, 102, 102, 1);
+    max-width: 453px;
+}
+
+.home__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38.6px;
+    justify-content: center;
+    padding: 0px 80px;
+}
+
+.home__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1250px;
+    margin: auto;
+    margin-bottom: 41.84px;
+    padding: 10px;
+    margin-top: 69px;
+    gap: 10px;
+}
+
+.button__clear {
+    border-radius: 5px;
+    height: 61.16px;
+    width: 222.21px;
+    border: 2px solid var(--color-backOrange);
+    background-color: var(--color-whiteText);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button__cal {
+    border-radius: 5px;
+    height: 61.16px;
+    width: 222.21px;
+    background-color: var(--color-backOrange);
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.home__summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+}
+
+.summary__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.summary__list {
+    background-color: rgba(249, 249, 249, 1);
+    max-width: 416px;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.list__div {
+    display: flex;
+    gap: 50px;
+}
+
+.list__div-title {
+    width: 126px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.list__div-p{
+    width: 90px;
+}
+
+.font-700{
+    font-weight: 700;
+}
+
+@media (min-width:700px) {
+    .home__button{
+        flex-direction: row;
+        gap: 0;
+    }
+    .home__list {
+        padding: 0px 196px;
+    }
+}
+
+@media (min-width:1000px) {
+    .list__div {
+        gap: 153px;
+    }
+}

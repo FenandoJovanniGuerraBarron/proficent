@@ -1,0 +1,32 @@
+.header{
+    background-color: var(--color-backOrange);
+    display: flex;
+    color: var(--color-whiteText);
+    padding-top: 41px;
+    padding-bottom: 67px;
+    gap:35px;
+    justify-content: center;
+}
+
+.header__list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+}
+
+@media (min-width:1000px) {
+    .header{
+        gap: 382px;
+    }
+
+    .header__list{
+        gap: 65px;
+        font-size: 16px;
+        flex-direction: row;
+    }
+
+}
