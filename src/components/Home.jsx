@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Button from './Button'
 import Card from './Card'
 import './styles/home.css'
+import Total from './Total'
 
 const Home = () => {
 
@@ -110,30 +111,12 @@ const Home = () => {
       <div className='home__summary' >
         <h2 className='summary__title' >Summary</h2>
         <div className='summary__list' >
-          <div className='list__div' >
-            <h5 className='list__div-title' >Total Items</h5>
-            <span className='list__div-p' >{totalItems}</span>
-          </div>
-          <div className='list__div' >
-            <h5 className='list__div-title' >Total M2</h5>
-            <span className='list__div-p' >{totalM}</span>
-          </div>
-          <div className='list__div' >
-            <h5 className='list__div-title' >Subtotal</h5>
-            <span className='list__div-p' >${subTotal}</span>
-          </div>
-          <div className='list__div' >
-            <h5 className='list__div-title' >Tax</h5>
-            <span className='list__div-p' >${tax}</span>
-          </div>
-          <div className='list__div' >
-            <h5 className='list__div-title font-700 ' >Total</h5>
-            <span className=' list__div-p font-700' >${total}</span>
-          </div>
-          <div className='list__div' >
-            <h5 className='list__div-title font-700 ' >Due Today 50%</h5>
-            <span className=' list__div-p font-700' >${due}</span>
-          </div>
+        <Total total={totalItems} title='Total Items' clas='' />
+        <Total total={totalM} title='Total M2' clas='' />
+        <Total total={subTotal} title='Subtotal' clas='' />
+        <Total total={tax} title='Tax' clas='' />
+        <Total total={total} title='Total' clas='font-700' />
+        <Total total={due} title='Due Today 50%' clas='font-700' />
         </div>
       </div>
     </div>
